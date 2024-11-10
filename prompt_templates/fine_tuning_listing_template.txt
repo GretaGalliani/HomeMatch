@@ -1,0 +1,15 @@
+Based on the user's preferences:
+{user_preference_text}
+
+Rewrite the following property listing description to appeal specifically to the user. Be sure to:
+1. Adjust the **title** and **description** to highlight the user’s key interests that have been mentioned in their responses.
+2. If the user is not interested in certain features (e.g., garden, specific amenities), downplay or leave out those details.
+3. Focus on aspects that align with the user's preferences, such as **neighborhood**, **architectural style**, **amenities**, and **price**.
+4. Ensure the **zone of Milan** and the **price** are clearly highlighted, as those are key user interests. 
+5. Provide a compelling title that includes the most appealing features based on the user’s responses.
+6. Do not lie about houses charactericts, and most importanlty, do not change the price!
+
+The original property description is as follows:
+{initial_listing}
+
+{format_instructions}

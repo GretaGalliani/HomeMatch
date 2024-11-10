@@ -1,0 +1,29 @@
+Consider this house in Milan, with the following characterics: 
+zone: {zone}
+area (square meters): {area}
+number of rooms: {rooms}
+number of bathrooms: {bathrooms}
+construction year: {construction_year}
+floor: {floor}
+has elevator: {has_elevator}
+has parking space: {has_parking_space}
+has garden: {has_garden}
+has terrace: {has_terrace}
+condition of the property: {property_condition}
+residential type: {residential_type}
+distance from public transport in meters: {distance_from_public_transport}
+distance from airport in meters: {distance_from_airport}
+distance from groceries in meters: {distance_from_groceries}
+distance from hospital in meters: {distance_from_hospital}
+distance from prison in meters: {distance_from_prison}
+distance from restaurant in meters: {distance_from_restaurant}
+distance from river in meters: {distance_from_river}
+distance from tourism landmark in meters: {distance_from_tourism_landmark}
+distance from main street in meters: {distance_from_main_street}
+distance from park in meters: {distance_from_park}
+distance from school in meters: {distance_from_school}
+distance from university in meters: {distance_from_university}
+price in euros: {price}
+
+I need you to write a listing for my real estate company, writing a detailed description of the property and including all the relevant information, specific details such as the property’s size, number of rooms, amenitiese.g., garden, balcony, parking), any recent renovations, and imagine unique features coherent with the data I provided your that set it apart (e.g., high ceilings, natural light, modern kitchen). Include a brief description of the zone (neighboorhood) vibe and imagine details about the architecture style, based on what you know about the house and about zone {zone} in Milan.
+You do not need to be extremely convincing, as this listing will be fine tuned later to include engaging details tailore to each specific user, but I need you to include all the relevant details in this listing.

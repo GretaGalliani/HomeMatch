@@ -1,0 +1,88 @@
+#===========#
+# DATA 
+#===========#
+# csv paths
+house_data: '{source}/data/house_data.csv'
+listings: '{source}/data/listings.csv'
+
+# ChromaDB
+chromadb_persist_directory: '{source}/chroma_db'
+property_listings_collection: 'property_listings'
+
+question_folder: '{source}/preference_questions'
+#=================#
+# PROMPT TEMPLATES 
+#=================#
+generate_property_listing_template: '{source}/prompt_templates/generate_property_listing_template.txt'
+fine_tuning_listing_template: '{source}/prompt_templates/fine_tuning_listing_template.txt'
+
+#=================#
+# PARAMETERS 
+#=================#
+## SyntheticDataGenerator
+# Generate listings parameters
+generate_property_listing_input_prompt_variables: [
+        "zone", "area", "rooms", "bathrooms", "construction_year", "floor", 
+        "has_elevator", "has_parking_space", "has_garden", "has_terrace", 
+        "property_condition", "residential_type", "distance_from_public_transport", 
+        "distance_from_airport", "distance_from_groceries", "distance_from_hospital", 
+        "distance_from_prison", "distance_from_restaurant", "distance_from_river", 
+        "distance_from_tourism_landmark", "distance_from_main_street", 
+        "distance_from_park", "distance_from_school", "distance_from_university", "price"
+    ]
+open_ai_parameters: 
+  model: 'gpt-3.5-turbo'
+  temperature: 0 
+  max_tokens: 2000
+# generate embeddings parameters
+embedding_model: 'text-embedding-3-small'
+
+## HomeMatch
+home_match_style:
+  title: 
+    text: "HomeMatch 🏠"
+    color: "#4CAF50"   
+    align: "center"
+    font_size: "32px"
+  
+  form: 
+    question_size: "16px"
+    margin: "5px 0 10px 0"
+    placeholder: "Type your answer here..."
+    width: "90%"
+    padding: "5px"
+    container_margin: "10px"
+  
+  submit_button: 
+    description: "Submit"
+    button_style: "success"
+    width: "40%"
+    margin: "20px auto"
+
+  results: 
+    initial_message:
+      text-align: "center"
+      font-size: "1.2em"
+      color: "#3a86ff"
+      padding: "10px"
+      background-color: "#e0f7fa"
+      border-radius: "8px"
+      margin-bottom: "20px"
+      text: " 🎉 We found some fantastic proposals for your dream home in Milan! 🎉"
+    
+    error: 
+      color: "red"
+      text: "No matching properties found."
+
+    box: 
+      background-color: "#E0F7FA"
+      text-color: "#251F47"
+      border-size: "2px solid"
+      border-color: "#251F47"
+      padding: "15px"
+      margin: "15px 0"
+      border-radius: "10px"
+      font-weight: "bold"
+
+fine_tuning_listing_input_prompt_variables: ["user_preference_text", "initial_listing", "format_instructions"]
+
